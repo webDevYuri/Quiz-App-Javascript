@@ -1,0 +1,204 @@
+::after, ::before, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(198, 248, 255);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.quiz-app {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    z-index: 99;
+}
+.answer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.answer-buttons button {
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    padding: 10px 10px 10px 70px;
+    background-color: transparent;
+    width: 200px;
+}
+
+.question-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1#question {
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    color: rgb(112, 112, 112);
+    font-size: 18px;
+    text-align: center;
+    align-self: center;
+    width: 400px;
+
+}
+
+button.next-button {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    width: 150px;
+    align-self: center;
+    border-radius: 20px;
+    border: 1px solid rgb(235, 235, 235);
+    font-size: 18px;
+    color: #555555;
+    box-shadow:  26px 26px 52px #bababa,
+             -26px -26px 52px #ffffff;
+    transition: all .3s ease-in-out;
+}
+button.next-button:hover{
+    background-color: rgb(236, 232, 211);
+}
+.a,.b,.c,.d {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow:  6px 6px 12px #bababa,
+             -6px -6px 12px #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.a:hover {
+    background-color: rgb(236, 232, 211);
+}
+
+.b:hover {
+    background-color: rgb(236, 232, 211);
+}
+
+.c:hover {
+    background-color: rgb(236, 232, 211);
+}
+
+.d:hover {
+    background-color: rgb(236, 232, 211);
+}
+
+
+p.label {
+    position: absolute;
+    background: rgb(25, 115, 138);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(25, 115, 138);
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow:  5px 5px 10px #d0d0d0,
+             -5px -5px 10px #f0f0f0;
+
+}
+h1#quizTime {
+    color:  rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.btn.no-hover:hover {
+    background-color: initial; 
+    cursor: not-allowed; 
+    box-shadow: none; 
+}
+.btn.correct {
+    background-color: #4CAF50; 
+    height: 100%;
+    color: white;
+}
+
+.btn.wrong {
+    background-color: #f44336; 
+    height: 100%;
+    color: white;
+}
+
+.btn.no-hover {
+    cursor: not-allowed; 
+    box-shadow: none; 
+}
+
+.btn.no-hover:hover {
+    background-color: initial; 
+}
+.finish-message {
+    display: none;
+    text-align: center;
+}
+
+.question-wrapper {
+    display: block;
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+button#restartBtn{
+    margin-top: 20px;
+    padding: 20px;
+    width: 190px;
+    align-self: center;
+    border-radius: 20px;
+    border: 1px solid rgb(235, 235, 235);
+    font-size: 18px;
+    color: #555555;
+    box-shadow:  26px 26px 52px #bababa,
+             -26px -26px 52px #ffffff;
+    transition: all .3s ease-in-out;
+}
+button#restartBtn:hover{
+    background-color: rgb(236, 232, 211);
+}
+
+p#congrats {
+    font-size: 20px;
+    margin: 10px;
+}
